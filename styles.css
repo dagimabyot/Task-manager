@@ -293,7 +293,6 @@ body {
     box-shadow: var(--shadow-md);
 }
 
-/* All Tasks Button - Blue */
 .filter-btn[data-filter="all"] {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
     color: var(--white);
@@ -562,7 +561,6 @@ body {
     box-shadow: var(--shadow-lg);
 }
 
-/* RED Clear Completed Button */
 .clear-btn {
     background: linear-gradient(135deg, var(--danger-color) 0%, var(--danger-dark) 100%);
     color: var(--white);
