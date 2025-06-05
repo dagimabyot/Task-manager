@@ -101,7 +101,7 @@ class TaskManager {
         this.hideError();
         this.updateDisplay();
         
-        // Add animation to new task
+ 
         setTimeout(() => {
             const newTaskElement = this.taskList.querySelector('.task-item');
             if (newTaskElement) {
@@ -239,7 +239,7 @@ class TaskManager {
     }
 }
 
-// Initialize the task manager when the page loads
+
 let taskManager;
 document.addEventListener('DOMContentLoaded', () => {
     taskManager = new TaskManager();
