@@ -305,7 +305,6 @@ body {
     background: linear-gradient(135deg, var(--primary-dark) 0%, #3730a3 100%);
 }
 
-/* Pending Button - Yellow */
 .filter-btn[data-filter="pending"] {
     background: linear-gradient(135deg, var(--warning-color) 0%, #d97706 100%);
     color: var(--white);
@@ -317,7 +316,6 @@ body {
     background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
 }
 
-/* Completed Button - Green */
 .filter-btn[data-filter="completed"] {
     background: linear-gradient(135deg, var(--success-color) 0%, var(--success-dark) 100%);
     color: var(--white);
@@ -329,7 +327,6 @@ body {
     background: linear-gradient(135deg, var(--success-dark) 0%, #15803d 100%);
 }
 
-/* Active state styling */
 .filter-btn.active {
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg) !important;
@@ -389,19 +386,16 @@ body {
     border-color: var(--warning-color);
 }
 
-/* Hover effects for pending tasks - yellow background */
 .task-item.pending:hover {
     background: linear-gradient(135deg, var(--warning-light) 0%, #fef3c7 100%);
     border-color: var(--warning-color);
 }
 
-/* Hover effects for completed tasks - green background */
 .task-item.completed:hover {
     background: linear-gradient(135deg, #bbf7d0 0%, var(--success-light) 100%);
     border-color: var(--success-color);
 }
 
-/* Circular Radio Button Style */
 .task-checkbox {
     width: 24px;
     height: 24px;
@@ -450,7 +444,7 @@ body {
     font-weight: 500;
 }
 
-/* Removed text-decoration: line-through for completed tasks */
+
 .task-item.completed .task-text {
     color: var(--gray-600);
     opacity: 0.9;
@@ -555,7 +549,6 @@ body {
     letter-spacing: 0.5px;
 }
 
-/* GREEN Complete All Button */
 .complete-all-btn {
     background: linear-gradient(135deg, var(--success-color) 0%, var(--success-dark) 100%);
     color: var(--white);
@@ -632,7 +625,6 @@ body {
     margin-top: 4px;
 }
 
-/* Loading animation */
 .loading {
     opacity: 0.6;
     pointer-events: none;
@@ -668,7 +660,6 @@ body {
     }
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     body {
         padding: 10px;
