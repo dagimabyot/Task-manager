@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager Pro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-content">
+                <h1>Task Manager</h1>
+                <p>Organize your life with style and efficiency</p>
+            </div>
+        </div>
+
+        <div class="task-input-section">
+            <div class="task-input-container">
+                <div class="input-wrapper">
+                    <input 
+                        type="text" 
+                        class="task-input" 
+                        placeholder="What needs to be accomplished today?"
+                        id="taskInput"
+                        maxlength="150"
+                        autocomplete="off"
+                    >
+                    <div class="char-counter" id="charCounter">0/150</div>
+                </div>
+                <button class="add-btn" id="addBtn">
+                    <span id="addBtnText">Add Task</span>
+                </button>
+            </div>
+            <div class="error-message" id="errorMessage"></div>
+        </div>
+
+        <div class="stats-section">
+            <div class="stat-card total">
+                <div class="stat-number" id="totalTasks">0</div>
+                <div class="stat-label">Total</div>
+            </div>
+            <div class="stat-card pending">
+                <div class="stat-number" id="pendingTasks">0</div>
+                <div class="stat-label">Pending</div>
+            </div>
+            <div class="stat-card completed">
+                <div class="stat-number" id="completedTasks">0</div>
+                <div class="stat-label">Completed</div>
+            </div>
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All Tasks</button>
+            <button class="filter-btn" data-filter="pending">Pending</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+
+        <div class="task-list" id="taskList">
+            <div class="empty-state" id="emptyState" style="display: none;">
+                <div class="empty-state-icon">🎯</div>
+                <h3>Ready to get productive?</h3>
+                <p>Add your first task above and start organizing your day with purpose and clarity.</p>
+            </div>
+        </div>
+
+        <div class="actions-section">
+            <div class="bulk-actions">
+                <button class="action-btn complete-all-btn" id="completeAllBtn">
+                    Complete All
+                </button>
+                <button class="action-btn clear-btn" id="clearBtn">
+                    Clear Completed
+                </button>
+            </div>
+            <div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+                </div>
+                <div class="progress-text" id="progressText">0% Complete</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
